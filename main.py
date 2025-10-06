@@ -135,7 +135,6 @@ def plot_interactive_chart(df):
             name='종가',
             line=dict(color='blue', width=2),
             hovertemplate='<b>%{fullData.name}</b><br>' +
-                         '날짜: %{x}<br>' +
                          '가격: $%{y:.2f}<extra></extra>'
         ),
         row=1, col=1
@@ -151,7 +150,6 @@ def plot_interactive_chart(df):
                 name='5일 이동평균',
                 line=dict(color='red', width=1),
                 hovertemplate='<b>%{fullData.name}</b><br>' +
-                             '날짜: %{x}<br>' +
                              '가격: $%{y:.2f}<extra></extra>'
             ),
             row=1, col=1
@@ -166,7 +164,6 @@ def plot_interactive_chart(df):
                 name='20일 이동평균',
                 line=dict(color='orange', width=1),
                 hovertemplate='<b>%{fullData.name}</b><br>' +
-                             '날짜: %{x}<br>' +
                              '가격: $%{y:.2f}<extra></extra>'
             ),
             row=1, col=1
@@ -181,7 +178,6 @@ def plot_interactive_chart(df):
                 name='60일 이동평균',
                 line=dict(color='purple', width=2),
                 hovertemplate='<b>%{fullData.name}</b><br>' +
-                             '날짜: %{x}<br>' +
                              '가격: $%{y:.2f}<extra></extra>'
             ),
             row=1, col=1
@@ -196,7 +192,6 @@ def plot_interactive_chart(df):
             marker_color='green',
             opacity=0.7,
             hovertemplate='<b>%{fullData.name}</b><br>' +
-                         '날짜: %{x}<br>' +
                          '거래량: %{y:.1f}M<extra></extra>'
         ),
         row=2, col=1
