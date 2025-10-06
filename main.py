@@ -13,6 +13,11 @@ from datetime import datetime
 import warnings
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+import sys
+import io
+
+# 한글 인코딩 설정
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 warnings.filterwarnings('ignore')
 
 # 한글 폰트 설정
@@ -23,8 +28,8 @@ def load_data(file_path):
     """CSV 파일을 로드하고 데이터를 정리합니다."""
     print("데이터 로딩 중...")
     
-    # CSV 파일 읽기
-    df = pd.read_csv(file_path)
+    # CSV 파일 읽기 (인코딩 명시적 지정)
+    df = pd.read_csv(file_path, encoding='utf-8')
     
     # 컬럼명 정리
     df.columns = ['date', 'close', 'open', 'high', 'low', 'volume', 'change_pct']
