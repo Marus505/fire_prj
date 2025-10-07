@@ -237,7 +237,7 @@ def main():
     
     try:
         # 데이터 로드
-        df = load_data('SOXL_2y.csv')
+               df = load_data('data/SOXL_2y.csv')
         
         # 기본 분석
         basic_analysis(df)
@@ -252,7 +252,7 @@ def main():
         print("\n분석 완료!")
         
     except FileNotFoundError:
-        print("오류: SOXL_2y.csv 파일을 찾을 수 없습니다.")
+        print("오류: data/SOXL_2y.csv 파일을 찾을 수 없습니다.")
     except Exception as e:
         print(f"오류 발생: {e}")
 

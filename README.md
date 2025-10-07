@@ -27,12 +27,21 @@ SOXL(반도체 3배 레버리지 ETF) 주식 데이터 분석 및 트레이딩 �
 
 ```
 FIRE_Prj/
-├── main.py                          # 메인 분석 스크립트
-├── trading_simulator.py             # 기본 트레이딩 시뮬레이터
-├── improved_trading_simulator.py    # 개선된 트레이딩 시뮬레이터
-├── requirements.txt                 # 필요한 패키지 목록
-├── .gitignore                       # Git 제외 파일 목록
-└── README.md                        # 프로젝트 설명서
+├── main.py                    # 메인 분석 스크립트
+├── data/                      # 데이터 파일
+│   └── SOXL_2y.csv           # SOXL 2년간 주식 데이터
+├── results/                   # 분석 결과 파일
+│   └── january_trading_results.csv  # 1월 트레이딩 시뮬레이션 결과
+├── scripts/                   # 시뮬레이션 스크립트
+│   ├── trading_simulator.py
+│   ├── improved_trading_simulator.py
+│   ├── january_simulation.py
+│   └── january_simulation_v2.py
+├── docs/                      # 문서 파일
+│   └── OUTLINE.md            # 트레이딩 전략 개요
+├── requirements.txt           # Python 패키지 의존성
+├── README.md                 # 프로젝트 설명서
+└── .gitignore               # Git 무시 파일 목록
 ```
 
 ## 🛠️ 설치 및 실행
